@@ -1,6 +1,6 @@
 @font-face {
    font-family: xmasFont;
-   src: url(MerryChristmasFlake.ttf);
+   src: url(/assets/fonts/MerryChristmasFlake.ttf);
    font-weight: bold;
 }
  #num {
@@ -62,7 +62,7 @@
      -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
 
-     background-image: url("background.jpg");
+     background-image: url("/assets/img/background.jpg");
      background-repeat: no-repeat;
      background-position: center;
      background-size: cover;
