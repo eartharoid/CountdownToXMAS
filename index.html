@@ -1,0 +1,86 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Countdown To Christmas</title>
+	<meta name="title" content="Countdown To Christmas">
+	<meta name="description" content="A festive and decorative countdown to Christmas.">
+  <meta name="keywords" content="christmas,xmas,countdown,fesitve">
+  <meta name="author" content="Eartharoid">
+	<meta name="image" content="http://www.iconarchive.com/download/i81025/christmaswebmaster/flat-christmas/Santa-Hat.ico" />
+	<meta name="url" content="https://www.countdowntoxmas.tk"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="twitter:card" content="Countdown To Christmas">
+  <meta name="twitter:title" content="Countdown To Christmas">
+  <meta name="twitter:description" content="A festive and decorative countdown to Christmas.">
+  <meta name="twitter:creator" content="@Eartharoid">
+  <meta name="twitter:image" content="/assets/img/logo.png" />
+
+  <meta name="og:locale" content="en_UK">
+  <meta name="og:title" content="Countdown To Christmas"/>
+  <meta name="og:image" content="/assets/img/logo.png"/>
+  <meta name="og:url" content="https://www.countdowntoxmas.tk"/>
+  <meta name="og:description" content="A fesitve Christmas countdown."/>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet" type="text/css">
+	<link rel="shortcut icon" id="favicon" href="favicon.ico">
+	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet" type="text/css">
+	<script async="" src="//www.google-analytics.com/analytics.js"></script><script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.js"></script>
+  <script type="text/javascript" src="let_it_snow/jquery.let_it_snow.js"></script>
+
+	<script>
+	  $(document).ready( function() {
+	     /*$("canvas.flare").let_it_snow({
+  	      windPower: 0,
+  	      speed: 0,
+  	      color: "#392F52",
+  	      size:120,
+  	      opacity: 0.00000001,
+  	      count: 40,
+  	      interaction: false
+  	    });*/
+  	    $("canvas.snow").let_it_snow({
+    	      windPower: 3,
+    	      speed: 1,
+    	      count: 250,
+    	      size: 0,
+    	  });
+    	  $("canvas.flake").let_it_snow({
+    	      windPower: -2,
+    	      speed: 1,
+    	      count: 20,
+    	      size: 7.5,
+    	      image: "let_it_snow/white-snowflake.png"
+    	  });
+
+	  });
+		</script>
+  </head>
+  <body data-gr-c-s-loaded="true" class="js"><img src="let_it_snow/white-snowflake.png" style="display: none" id="lis_flake">
+
+  <canvas width="1440" height="777" class="flare"></canvas>
+  <canvas width="1440" height="777" class="snow"></canvas>
+  <canvas width="1440" height="777" class="flake"></canvas>
+
+  <!--CONTENT-->
+	<div id="box">
+  <center>
+					<br>
+					<div id="cntdwn">
+						<script>
+							TargetDate = "12/25/"+ new Date().getFullYear() + " 12:00 AM";
+							BackColor = "black";
+							ForeColor = "white";
+							CountActive = true;
+							CountStepper = -1;
+							LeadingZero = true;
+							DisplayFormat = '* <span id="num">%%D%%</span> Days 0 <span id="num">%%H%%</span> Hours 0 <span id="num">%%M%%</span> Minutes 0 <span id="num">%%S%%</span> Seconds To Christmas! *';
+							FinishMessage = "* 1 * Merry Christmas! * 1 *";
+						</script>
+					</div>
+
+				</center>
+				</div>
+<script src="let_it_snow/countdown.js"></script>
+
+
+</body></html>
