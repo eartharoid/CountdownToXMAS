@@ -1,33 +1,51 @@
-<html class="gr__thepetedesign_com"><head>
+<html class="gr__thepetedesign_com">
+
+<head>
 	<meta charset="utf-8">
 	<title>Countdown To Christmas</title>
 	<meta name="title" content="Countdown To Christmas">
 	<meta name="description" content="A fesitve and decorative countdown to Christmas.">
-    <meta name="keywords" content="christmas,xmas,countdown,fesitve">
-    <meta name="author" content="Eartharoid">
+	<meta name="keywords" content="christmas,xmas,countdown,fesitve">
+	<meta name="author" content="Eartharoid">
 	<meta name="image" content="/assets/img/logo.png" />
-	<meta name="url" content="https://www.countdowntoxmas.tk"/>
+	<meta name="url" content="https://www.countdowntoxmas.tk" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="twitter:card" content="Countdown To Christmas">
-<meta name="twitter:title" content="Countdown To Christmas">
-<meta name="twitter:description" content="A fesitve and decorative countdown to Christmas.">
-<meta name="twitter:creator" content="@Eartharoid">
-<meta name="twitter:image" content="/assets/img/logo.png" />
-<meta name="og:locale" content="en_UK">
-<meta name="og:title" content="Countdown To Christmas"/>
-<meta name="og:image" content="/assets/img/logo.png"/>
-<meta name="og:url" content="https://www.countdowntoxmas.tk"/>
-<meta name="og:description" content="A fesitve and decorative countdown to Christmas."/>
+	<meta name="twitter:card" content="Countdown To Christmas">
+	<meta name="twitter:title" content="Countdown To Christmas">
+	<meta name="twitter:description" content="A fesitve and decorative countdown to Christmas.">
+	<meta name="twitter:creator" content="@Eartharoid">
+	<meta name="twitter:image" content="/assets/img/logo.png" />
+	<meta name="og:locale" content="en_UK">
+	<meta name="og:title" content="Countdown To Christmas" />
+	<meta name="og:image" content="/assets/img/logo.png" />
+	<meta name="og:url" content="https://www.countdowntoxmas.tk" />
+	<meta name="og:description" content="A fesitve and decorative countdown to Christmas." />
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet" type="text/css">
 	<link rel="shortcut icon" id="favicon" href="/assets/img/favicon.ico">
 	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet" type="text/css">
-	<script async="" src="//www.google-analytics.com/analytics.js"></script><script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.js"></script>
-  <script type="text/javascript" src="let_it_snow/jquery.let_it_snow.js"></script>
+	<script async="" src="//www.google-analytics.com/analytics.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.js"></script>
+	<script type="text/javascript" src="let_it_snow/jquery.let_it_snow.js"></script>
 	<link href="/assets/css/styles.css" rel="stylesheet" type="text/css">
 	<link href="/assets/css/modal.css" rel="stylesheet" type="text/css">
+
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-129200189-2"></script>
 	<script>
-	  $(document).ready( function() {
-	     /*$("canvas.flare").let_it_snow({
+		window.dataLayer = window.dataLayer || [];
+
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-129200189-2');
+	</script>
+
+	<script>
+		$(document).ready(function() {
+			/*$("canvas.flare").let_it_snow({
   	      windPower: 0,
   	      speed: 0,
   	      color: "#392F52",
@@ -36,87 +54,52 @@
   	      count: 40,
   	      interaction: false
   	    });*/
-  	    $("canvas.snow").let_it_snow({
-    	      windPower: 2,
-    	      speed: 1,
-    	      count: 250,
-    	      size: 0,
-    	  });
-    	  $("canvas.flake").let_it_snow({
-    	      windPower: 1,
-    	      speed: 1,
-    	      count: 20,
-    	      size: 7.5,
-    	      image: "/assets/img/white-snowflake.png"
-    	  });
+			$("canvas.snow").let_it_snow({
+				windPower: 2,
+				speed: 1,
+				count: 250,
+				size: 0,
+			});
+			$("canvas.flake").let_it_snow({
+				windPower: 1,
+				speed: 1,
+				count: 20,
+				size: 7.5,
+				image: "/assets/img/white-snowflake.png"
+			});
 
-	  });
-		</script>
-  </head>
-  <body data-gr-c-s-loaded="true" class="js"><img src="let_it_snow/white-snowflake.png" style="display: none" id="lis_flake">
+		});
+	</script>
+</head>
 
-  <canvas width="1440" height="777" class="flare"></canvas>
-  <canvas width="1440" height="777" class="snow"></canvas>
-  <canvas width="1440" height="777" class="flake"></canvas>
+<body data-gr-c-s-loaded="true" class="js"><img src="let_it_snow/white-snowflake.png" style="display: none" id="lis_flake">
 
-  <!--CONTENT-->
-  <div id="box">
-  <center>
-		<div id="myModal" class="modal">
+	<canvas width="1440" height="777" class="flare"></canvas>
+	<canvas width="1440" height="777" class="snow"></canvas>
+	<canvas width="1440" height="777" class="flake"></canvas>
 
-	  <!-- Modal content -->
-	  <div class="modal-content">
-	    <span class="close">&times;</span>
-	    <p>Some text in the Modal..</p><br>
-			<span class="close">Okay, close this now.</span>
-	  </div>
+	<!--CONTENT-->
+	<div id="box">
+		<center>
+			<br>
+			<div id="cntdwn">
+				<script>
+					TargetDate = "12/25/" + new Date().getFullYear() + " 12:00 AM";
+					BackColor = "black";
+					ForeColor = "white";
+					CountActive = true;
+					CountStepper = -1;
+					LeadingZero = true;
+					DisplayFormat = '* <span id="num">%%D%%</span> Days 0 <span id="num">%%H%%</span> Hours 0 <span id="num">%%M%%</span> Minutes 0 <span id="num">%%S%%</span> Seconds To Christmas! *';
+					FinishMessage = "* 1 * Merry Christmas! * 1 *";
+				</script>
+			</div>
 
+		</center>
 	</div>
-	<script>
-// Get the modal
-var modal = document.getElementById('myModal');
-
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks the button, open the modal
-btn.onclick = function() {
-    modal.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-    modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
-</script>
-
-					<br>
-					<div id="cntdwn">
-						<script>
-							TargetDate = "12/25/"+ new Date().getFullYear() + " 12:00 AM";
-							BackColor = "black";
-							ForeColor = "white";
-							CountActive = true;
-							CountStepper = -1;
-							LeadingZero = true;
-							DisplayFormat = '* <span id="num">%%D%%</span> Days 0 <span id="num">%%H%%</span> Hours 0 <span id="num">%%M%%</span> Minutes 0 <span id="num">%%S%%</span> Seconds To Christmas! *';
-							FinishMessage = "* 1 * Merry Christmas! * 1 *";
-						</script>
-					</div>
-
-				</center>
-				</div>
-<script src="let_it_snow/countdown.js"></script>
+	<script src="let_it_snow/countdown.js"></script>
 
 
-</body></html>
+</body>
+
+</html>
