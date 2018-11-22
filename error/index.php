@@ -1,3 +1,20 @@
+<?php
+  $err = $_GET['code'];
+  $text = $_GET['text'];
+
+if (empty($err)){
+  $err = "UNKOWN ERROR";
+}
+if (empty($text)){
+  $text = "Something went wrong!";
+}
+
+if ($err == "404"){
+  $url = "https://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+  $path = parse_url($url, PHP_URL_PATH);
+  $text = 'Sorry, we couldn\'t find <span style="color:#1ABC9C;">'.$path.'</span>.';
+}
+?>
 <html class="gr__thepetedesign_com">
 
 <head>
@@ -147,55 +164,25 @@
     }
 
     .contbox {
-      padding-top: 10px;
-      padding-bottom: 10px;
+      padding-top: 120px;
+      padding-bottom: 20px;
       color: white;
       text-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
     }
-
-    code {
-      color: tomato;
-    }
   </style>
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129200189-2"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-
-    gtag('config', 'UA-129200189-2');
-  </script>
-
 </head>
 
 <body>
+
   <div class="contbox">
   <!--CONTENT-->
   <center>
-    <h2>CHRISTMAS COUNTDOWN DISCORD BOT</h2>
-    <a href="https://discord.gg/pXc9vyC">Support Server</a>
-    <p>Add the Christmas Countdown bot to your Discord server for a daily countdown to the channel of your choice, as well as a countdown command.</p>
-    <p><strong>Commands:</strong></p>
-    <p><code>x!help</code> Command list.</p>
-    <p><code>x!ping</code> Ping pong. Useless.</p>
-    <p><code>x!website</code> Just a link to <a href="/?utm_source=page:discord">countdowntoxmas.tk</a></p>
-    <p><code>x!countdown</code> Displays number of days left until Christmas, and a link to the live countdown.</p>
-    <p><code>x!channel</code> Set the channel you want the automatic daily countdown to use. (required permission: <code>MANAGE_GUILD</code>)</p>
-    <p><code>x!reset</code> Deletes the set channel from database to disable the daily countdown. (required permission: <code>MANAGE_GUILD</code>)</p>
-    <a href="/invite?utm_source=page:discord">Add to your server</a>
-    <br><br>
-    <a href="https://discordbots.org/bot/509851616216875019">
-    <img src="https://discordbots.org/api/widget/status/509851616216875019.svg"></img> <img src="https://discordbots.org/api/widget/servers/509851616216875019.svg"></img>
-    </a>
     <br>
-    <a href="https://discord.boats/bot/509851616216875019/">
-    <img src="https://discord.boats/api/widget/509851616216875019" style="border-radius:5px;"></img><br><p><a href="https://discordbotindex.com/bot/509851616216875019/">DBI</a></p>
-    </a>
+    <h2>ERROR</h2>
+    <h1 style="color:red;"><?php echo $err; ?></h1>
+    <h2 style="color:white;"><?php echo $text; ?></h2>
+    <br>
+    <a href="/?utm_source=404">Home</a>
     </center>
 </div>
 
